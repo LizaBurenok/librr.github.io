@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); /* File to be stored at your site */
+  }
+
+body{
+  background-color: #1C3144 !important;
+}
+.section_menu_wrapper{
+  width: 12%;
+  background-color: #FFFAF4;
+  height: 88% !important;
+  transform: translateY(9%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.left_side{
+  width: 42.5%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFAF4;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.text{
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_text{
+  font-size: 23px;
+  color: #1C3144;
+}
+.header{
+  color: #1C3144;
+  font-size: 35px;
+}
+.right_side{
+  width: 45%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hiddenimg{
+  position: absolute;
+  transform: scale(.61);
+  right: 0.3%;
+  top: 12.2%;
+  z-index: 35;
+  display: none;
+  border: 2px solid #FFFAF4;
+  left: 56.5%;
+  top: 14%;
+}
+
+
+.hiddenimg.open{
+  display: block;
+}
+.first_row, .second_row, .third_row, .fourth_row, .five_row{
+  width: 100%;
+  height: 17.4%;
+  display: flex;
+  flex-direction: row;
+  transform: translateY(30%);
+}
+
+.one, .two, .three, .four, .five{
+  width: 20%;
+  height: 100%;
+  border: 0.6px solid white;
+}
+
+.space_img{
+  position: absolute;
+  z-index: 5;
+  transform: scale(.5) translateX(-17%) translateY(2%);
+}
+.line_wrap{
+  background-color: #FFFAF4;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+}
+
+.path.close{
+  display: none;
+}
+.path_line{
+  background-color: #FFFAF4;
+  position: absolute;
+  width: 236%;
+  height: 184%;
+  z-index: 30;
+  transform: scale(.56) translateY(13%) translateX(-6%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.path{
+ stroke-dasharray: 1000;
+stroke-dashoffset: 0;
+animation: dash 3s ease-out alternate infinite;
+
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*TEXT ANIMATION*/
+.block_text{
+  width: 90%;
+  margin: 0 auto;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text_2{
+  width: 100%;
+  height: 100%;
+  background-color: #1D3044;
+  display: flex;
+  justify-content: center;
+  transform: translateX(4%);
+  opacity: 0;
+  color: #FFFAF4;
+}
+
+.text_1{
+  width: 34%;
+  height: 50%;
+  background-color: #BFD7EA;
+  position: absolute;
+  font-size: 20px;
+  font-family: 'Avenir Next';
+  left: 17.5%;
+}
+
+.text_1 p{
+  width: 70%;
+  color:  #1D3044;
+  transform: translateX(5%) translateY(5%);
+}
+.btn{
+  width: 40px;
+  height: 40px;
+  background-color: #1D3044;
+  border-radius: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+p{
+  color: #ffff;
+}
+
+.row_line{
+  width: 30px;
+  position: absolute;
+  top: 27%;
+  left: 12%;
+  background-color: #FFFAF4;
+}
+
+.row_line.longLine{
+  animation: long 0.4s linear;
+}
+
+@keyframes long {
+  0%{
+    width: 31px;
+  }
+  100%{
+   width: 370px;
+  }
+}
+
+.text.textBlock{
+    display: none;
+}
+
+.text_2.visivle{
+    animation: open 0.5s linear;
+    animation-delay: 0.8s;
+  transform-origin: 100% 50%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+    0%{
+      transform: scaleX(0);
+      opacity: 1;
+    }
+    100%{
+        transform: scaleX(1);
+      opacity: 1;
+    }
+}
+
+.text_1.hidden {
+    animation: close 0.5s;
+    animation-fill-mode: forwards;
+   transform-origin: 100% 50%;
+   animation-delay: 0.3s;
+}
+
+@keyframes close {
+    0%{
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+
+
+
+.footer{
+  background-color: #FFFAF4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 8%;
+  transform: translateY(-200%);
+}
+
+.footer_adress{
+    transform: translateX(15%);
+}
+
+.footer_info{
+  transform: translateX(-25%);
+}
+
+.footer_socialnetwork{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 4%;
+  transform: translateX(-55%);
+}

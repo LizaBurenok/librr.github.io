@@ -1,0 +1,126 @@
+body{
+  background-color: #1C3144 !important;
+}
+.main_page{
+  height: 105% !important;
+}
+.section_menu_wrapper{
+  width: 12%;
+  background-color: #FFFAF4;
+  height: 90.2% !important;
+  transform: translateY(9%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menu{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFFAF4;
+  align-content: center;
+}
+
+
+.rectangle{
+  width: 30%;
+  background-color: #1C3144;
+  height: 18%;
+  position: absolute;
+  z-index: 40;
+  left: 52%;
+  top:26%;
+  overflow: hidden;
+}
+.rect_road img{
+  position: absolute;
+  transform: scale(2.2) translateY(29%);
+}
+
+.rect_road{
+  animation: road 7s linear infinite;
+}
+
+@keyframes road{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+.blue{
+  position: absolute;
+  z-index: 29;
+  width: 34.5%;
+  top: 18.2%;
+  left: 23.3%;
+}
+
+.left{
+  position: absolute;
+  transform: scale(.59);
+  z-index: 27;
+  top: -4%;
+  left: 21.3%;
+}
+
+.right{
+  position: absolute;
+  transform: scale(.588);
+  top: -4%;
+  z-index: 30;
+  left: 32.4%;
+}
+
+.white{
+  position: absolute;
+  width: 17.3%;
+  top: 9.6%;
+  left: 23%;
+}
+
+.frame{
+  width: 43%;
+  position: absolute;
+  left: 40%;
+  top: 14%;
+  z-index: 28;
+}
+
+.left_side{
+  width: 89%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+
+}
+.footer{
+  background-color: #FFFAF4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  height: 8%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.footer_adress{
+    transform: translateX(15%);
+}
+
+.footer_info{
+  transform: translateX(-25%);
+}
+
+.footer_socialnetwork{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 4%;
+  transform: translateX(-55%);
+}

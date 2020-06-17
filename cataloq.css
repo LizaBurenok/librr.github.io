@@ -1,0 +1,56 @@
+.link{
+  width: 70%;
+  transform: translateY(16%);
+}
+
+.linktext{
+  position: absolute;
+  color: #FFFAF4;
+  left: 80%;
+  font-size: 25px;
+  font-family: 'Avenir Next';
+  top: 50%;
+}
+
+.row{
+  transform: scale(.6) translateX(-40%);
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1300px){
+  .link{
+    transform: translateY(51%) scale(1.2) translateX(8.4%)
+  }
+
+  .lift_menu{
+    font-size: 22px;
+    transform: translateX(22%)
+  }
+
+  .linktext{
+    transform: translateY(-180%) translateX(-60%)
+  }
+  .menu_line{
+    transform: scale(1.12) translateX(30%)
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1024px){
+  .menu_line{
+    transform: translateX(-25%);
+  }
+
+  .lift_menu{
+    transform: scale(1.05) translateX(22%)
+  }
+
+  .footer_socialnetwork img{
+    margin-left: 10px;
+    transform: translateX(-130%);
+  }
+  .link{
+    transform: translateY(54%)
+  }
+
+}
